@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form login and password</title>
+  <link rel="stylesheet" href="doc.css">
+  <link href="https:/unpkg.com/boxicons@2.1.4/cs/boxicons.min.css" rel='stylesheet'>
+</head>
+</header>
+<body>
+  <header class="header-bar">
+    <h1 class="logo">Войти в аккаунт</h1>
+  
+    <!-- Гамбургер -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-btn">
+        <span></span><span></span><span></span>
+    </label>
+  
+    <!-- Меню -->
+    <nav class="menu">
+        <nav>
+            <a href="index.html">Главная</a>
+        </nav>
+        <nav>
+          <a href="about.html">Обо мне</a>
+      </nav>
+      <nav>
+        <a href="naviki.html">Навыки</a>
+    </nav>
+    <nav>
+      <a href="projects.html">проэкты</a>
+  </nav>
+        <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+    <div class="wrapper">
+      <form action="">
+        <h1>Login</h1>
+        <div class="input-box">
+        <input type="text" placeholder="username" required>
+        <i class='b bx-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="password" required>
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+      <div class="remember">
+        <label for=""> <input type="checkbox">Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+  <button type="submit" class="btn">Login</button>
+  <div class="register-link">
+    <p>Don't have an account? <a href="#"">Register</a></p>
+  </div>
+
+      </form>
+    </div>
+</body>
+</html>

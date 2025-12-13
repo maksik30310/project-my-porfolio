@@ -147,3 +147,112 @@ nav:active{
     background-color: #1e1e1e;
     transform: translateY(1px);
 }
+
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+  }
+  
+  /* Секция обо мне */
+  .about {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 20px;
+  }
+  
+  /* Верхний блок */
+  .about-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .avatar {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    filter: grayscale(100%);
+  }
+  
+  .about-header h2 {
+    font-size: 28px;
+    margin: 10px 0 5px;
+  }
+  
+  .about-header p {
+    font-size: 16px;
+    color: #b0b0b0;
+  }
+  
+  /* Текст обо мне */
+  .about-text {
+    line-height: 1.7;
+    font-size: 16px;
+    margin-bottom: 80px;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+  
+  .about-text p {
+    margin-bottom: 20px;
+  }
+  
+  /* Таймлайн */
+  .timeline h3 {
+    font-size: 22px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  /* Контейнер таймлайна */
+  .timeline {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  /* Вертикальная линия */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #333;
+  }
+  
+  /* Элемент таймлайна */
+  .timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 30px;
+  }
+  
+  /* Точка */
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: #e0e0e0;
+    border-radius: 50%;
+  }
+  
+  /* Год */
+  .timeline-item span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    color: #ffffff;
+  }
+  
+  /* Текст */
+  .timeline-item p {
+    margin: 0;
+    color: #b0b0b0;
+  }

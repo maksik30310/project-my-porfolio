@@ -86,7 +86,7 @@ header {
 /* ==== HERO ==== */
 
 .hero {
-    height: 70vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,21 +94,32 @@ header {
     padding: 20px;
     background: linear-gradient(135deg, #000000, rgb(255, 255, 255));
     color: white;
-    animation: fade 1.2s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease-out forwards;
+}
+@keyframes fadeUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.btn {
-    margin-top: 20px;
-    padding: 12px 25px;
+.hero-btn {
+    margin-top: 32px;
+    padding: 12px 26px;
     background: white;
     color: black;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-weight: 500;
     transition: 0.3s;
 }
 
-.btn:hover {
-    background: #ddd;
+.hero-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
 }
 
 /* ==== ОБЩИЕ БЛОКИ ==== */
@@ -120,49 +131,67 @@ header {
 
 h2 {
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 32px;
+    font-weight: 600;
 }
 
-/* ==== НАВЫКИ ==== */
 
-.skills {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 15px;
-}
-
-.skill {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-}
-
-.skill:hover {
-    transform: translateY(-5px);
-}
 
 /* ==== ПРОЕКТЫ ==== */
 
 .projects {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.project {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 24px;
+    text-align: left;
     transition: 0.3s;
-}
-
-.project:hover {
-    transform: scale(1.03);
-}
-
+  }
+  
+  .project-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .project-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    opacity: 0.8;
+    font-size: 14px;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    margin-top: 14px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .soon {
+    display: inline-block;
+    margin-top: 14px;
+    opacity: 0.5;
+    font-size: 14px;
+  }
 /* ==== КОНТАКТЫ ==== */
 
 .contacts a {
@@ -212,4 +241,10 @@ h2{
     margin: 20px 20xp;
     padding: 15px 20px;
     font-size: 35px;
+}
+
+.front{
+    text-align: center;
+    font-size: 21px;
+
 }

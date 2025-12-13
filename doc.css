@@ -143,6 +143,17 @@ header {
     font-size: 20px;
 }
 
+.input-box .icon{
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
 .wrapper .remember{
     display: flex;
     justify-content: space-between;

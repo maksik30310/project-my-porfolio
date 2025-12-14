@@ -7,7 +7,7 @@ Responsive Layout
 
 Личный сайт-портфолио
 HTML / CSS
-Адаптивная 
+Адаптивная верстка
 
 link to site / ссылка на сайт:
 https://maksik30310.github.io/project-my-porfolio/

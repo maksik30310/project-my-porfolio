@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Вход в аккаунт</title>
 
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="css/login.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
@@ -19,11 +19,11 @@
     </label>
   
     <nav class="menu">
-      <a href="index.html">Главная</a>
-      <a href="about.html">Обо мне</a>
-      <a href="skills.html">Навыки</a>
-      <a href="projects.html">Проекты</a>
-      <a href="login.html">Войти</a>
+      <a href="html/index.html">Главная</a>
+      <a href="html/about.html">Обо мне</a>
+      <a href="html/skills.html">Навыки</a>
+      <a href="html/projects.html">Проекты</a>
+      <a href="html/login.html">Войти</a>
     </nav>
   </header>
 
@@ -31,13 +31,13 @@
     <form action="#">
       <h1>Login</h1>
 
-      <div class="input-box">
-        <img src="img/user.png" class="icon" alt="User icon">
+      <div class="input-box" id="LoginForm">
+        <img src="img/user.png" id="login" class="icon" alt="User icon">
         <input type="text" placeholder="Username" required>
       </div>
 
       <div class="input-box">
-        <img src="img/lock.png" class="icon" alt="Lock icon">
+        <img src="img/lock.png" id="password" class="icon" alt="Lock icon">
         <input type="password" placeholder="Password" required>
       </div>
 
@@ -49,7 +49,7 @@
       </div>
 
       <button type="submit" class="btn">Login</button>
-
+      <p id="message"></p>
       <div class="register-link">
         <p>Don't have an account? <a href="#">Register</a></p>
       </div>

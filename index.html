@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Портфолио</title>
+	</head>
+	<body>
+		<header class="header-bar">
+			<h1 class="logo">Максим</h1>
+			<!-- Humburger-menu -->
+			<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+			<label for="menu-toggle" class="menu-btn">
+				<span></span><span></span><span></span>
+			</label>
+
+			<nav class="menu">
+				<a href="index.html">Главная</a>
+				<a href="about.html">Обо мне</a>
+				<a href="skills.html">Навыки</a>
+				<a href="projects.html">Проекты</a>
+				<a href="login.html">Войти</a>
+			</nav>
+		</header>
+
+		<!-- Главный экран -->
+		<section class="hero">
+			<h1>Привет! Я начинающий веб-разработчик</h1>
+			<p>Создаю адаптивные сайты и изучаю современные технологии</p>
+			<a href="#projects" class="hero-btn">Последние проекты</a>
+		</section>
+		<section class="front">
+			<h1>Это мой сайт портфолио</h1>
+			<p>
+				Здесь собран мои работы и навыки в области
+				<strong>frontend-разpаботки</strong>.
+			</p>
+			<p>Я старался сделась сайт аккуратным и приятным для просмотра.</p>
+		</section>
+
+		<!-- ПРОЕКТЫ -->
+		<section id="projects" class="projects">
+			<h2>Последние проекты</h2>
+
+			<div class="projects-grid">
+				<div class="project-card">
+					<h3>Бургер-меню</h3>
+					<p>Меню без JavaScript. Работает на чистом CSS.</p>
+					<a href="#" target="_blank">Открыть</a>
+				</div>
+
+				<div class="project-card">
+					<h3>Login форма</h3>
+					<p>Форма входа с иконками и адаптивной вёрсткой.</p>
+					<span class="soon">В разработке</span>
+				</div>
+
+				<div class="project-card">
+					<h3>Проект скоро</h3>
+					<p>Новый проект находится в разработке.</p>
+					<span class="soon">Скоро</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- КОНТАКТЫ -->
+		<section id="contacts" class="block">
+			<h2>Контакты</h2>
+			<h4>
+				Если вам нaдо со мной связаться то тут мой телеграм, почта и гитхаб где
+				лежат все мои проекты в том числе этот.
+			</h4>
+			<div class="contacts">
+				<p>Telegram: <a href="#">@Frwck</a></p>
+				<p>Email: harlamovmaksim49@gmail.com</p>
+				<p>GitHub: <a href="https://github.com/maksik30310">maksik30310</a></p>
+			</div>
+		</section>
+
+		<!-- Футер -->
+		<footer>© 2026 Все права защищены</footer>
+	</body>
+</html>

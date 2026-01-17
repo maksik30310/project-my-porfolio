@@ -173,8 +173,9 @@ nav:active{
     background: rgba(255,255,255,0.08);
     border-radius: 16px;
     padding: 20px;
+    margin: auto;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
   }
   
   .skill-card:hover {

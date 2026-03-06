@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="main.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Портфолио</title>
+	</head>
+	<body>
+		<header class="header-bar">
+			<h1 class="logo">Максим</h1>
+			<!-- Humburger-menu -->
+			<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+			<label for="menu-toggle" class="menu-btn">
+				<span></span><span></span><span></span>
+			</label>
+
+			<nav class="menu">
+				<a href="index.html">Главная</a>
+				<a href="about.html">Обо мне</a>
+				<a href="skills.html">Навыки</a>
+				<a href="projects.html">Проекты</a>
+				<a href="login.html">Войти</a>
+				<a href="trap.html">Чат со мной</a>
+			</nav>
+		</header>
+
+		<!-- Главный экран -->
+		<section class="hero">
+			<h1>Привет! Я начинающий веб-разработчик</h1>
+			<p>Создаю адаптивные сайты и изучаю современные технологии</p>
+			<a href="#projects" class="hero-btn">Последние проекты</a>
+		</section>
+		<section class="front">
+			<h1>Это мой сайт портфолио</h1>
+			<p>
+				Здесь собран мои работы и навыки в области
+				<strong>frontend-разpаботки</strong>.
+			</p>
+			<p>Я старался сделась сайт аккуратным и приятным для просмотра.</p>
+		</section>
+
+		<!-- ПРОЕКТЫ -->
+		<section id="projects" class="projects">
+			<h2>Последние проекты</h2>
+
+			<div class="projects-grid">
+				<div class="project-card">
+					<h3>Бургер-меню</h3>
+					<p>Меню без JavaScript. Работает на чистом CSS.</p>
+					<a href="#" target="_blank">Открыть</a>
+				</div>
+
+				<div class="project-card">
+					<h3>Mobile-fist</h3>
+					<p>Форма входа с иконками и адаптивной вёрсткой.</p>
+					<a
+						href="https://maksik30310.github.io/reg-moobile-first/"
+						target="_blank"
+						>Открыть</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- КОНТАКТЫ -->
+		<section id="contacts" class="block">
+			<h2>Контакты</h2>
+			<p>
+				Если вам нaдо со мной связаться то тут мой
+				<strong>телеграм и гитхаб</strong> где лежат все мои проекты в том числе
+				этот.
+			</p>
+			<div class="contacts">
+				<p>
+					Telegram:
+					<a href="https://web.telegram.org/a/#8261586519"
+						>@frwck_conctact_bot</a
+					>
+				</p>
+				<p>GitHub: <a href="https://github.com/maksik30310">гитхаб</a></p>
+			</div>
+		</section>
+
+		<!-- Футер -->
+		<footer>
+			© 2026 Все права защищены <br />
+			<h6>Все защишено политикой кофидециальности</h6>
+		</footer>
+	</body>
+</html>

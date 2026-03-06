@@ -1,0 +1,265 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #000, #7a7a7a, #fff);
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background: white;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+.header-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 15p 20px;
+	background: rgba(255, 255, 255, 0.15);
+	backdrop-filter: blur(8px);
+	display: flex;
+	align-items: center;
+	z-index: 900;
+}
+
+.logo {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+/* ---- Гамбургер ---- */
+
+.menu-btn {
+	width: 30px;
+	height: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 1001;
+}
+
+.menu-btn span {
+	display: block;
+	height: 4px;
+	background: black;
+	border-radius: 2px;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+/* ---- Меню ---- */
+
+.menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 250px;
+	background: rgb(127, 126, 126);
+	box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+	transform: translateX(100%);
+	transition: 0.3s;
+	padding-top: 80px;
+	display: flex;
+	flex-direction: column;
+}
+
+.menu a {
+	padding: 15px;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+.wrapper {
+	width: 420px;
+	background: transparent;
+	border: 2px solid rgb(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2s);
+	color: white;
+	border-radius: 10px;
+	padding: 30px 40px;
+}
+
+.wrapper h1 {
+	font-size: 36px;
+	text-align: center;
+}
+
+.wrapper .input-box {
+	width: 100%;
+	height: 50px;
+	margin: 30px 0;
+	position: relative;
+}
+/* Активное меню */
+.menu-toggle:checked ~ .menu {
+	transform: translateX(0);
+}
+
+.input-box input {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border: 2px solid rgb(255, 255, 255, 0.2);
+	border-radius: 40px;
+	font-size: 16px;
+	color: #fff;
+	padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+	color: #fff;
+}
+
+.input-box i {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+}
+
+.input-box .icon {
+	position: absolute;
+	right: 14px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 18px;
+	height: 18px;
+	opacity: 0.7;
+	pointer-events: none;
+}
+
+.wrapper .remember {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14.5px;
+	margin: -15px 0 15px;
+}
+
+.remember label input {
+	accent-color: #fff;
+	margin-right: 3px;
+}
+
+.remember a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.remember a:hover {
+	text-decoration: underline;
+}
+
+.wrapper .btn {
+	width: 100%;
+	height: 45px;
+	background: #fff;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+	cursor: pointer;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+}
+.wrapper .register-link {
+	font-size: 14.5px;
+	text-align: center;
+	margin-top: 20px;
+}
+.register-link p a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+}
+.register-link p a:hover {
+	text-decoration: underline;
+}
+
+nav {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #fafbff;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	font-family: sans-serif;
+	font-size: 16px;
+	transition: background-color 0, 3 ease;
+}
+
+nav:active {
+	background-color: #1e1e1e;
+	transform: translateY(1px);
+}
+
+.forgot-container {
+	width: 350px;
+	margin: 120px auto;
+	text-align: center;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.forgot-container input {
+	width: 100%;
+	padding: 10px;
+	border-radius: 6px;
+	border: none;
+	margin-top: 15px;
+}
+
+.send-btn {
+	background: #ffffff22;
+	color: #fff;
+	margin-top: 15px;
+	padding: 12px;
+	border: 1px solid #ffffff44;
+	border-radius: 8px;
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	transition: 0.2s;
+}
+
+.send-btn:hover {
+	background: #ffffff33;
+}
+.back-link {
+	display: inline-block;
+	margin-top: 12px;
+	color: #ccc;
+	text-decoration: none;
+	font-size: 14px;
+	opacity: 0.8;
+}
+.back-link:hover {
+	opacity: 1;
+}
+p {
+	line-height: 1.4;
+}

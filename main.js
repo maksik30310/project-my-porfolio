@@ -4,9 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	const TRAP_SETTINGS = {
 		botName: 'frwck_contact_bot',
-		message: encodeURIComponent(
-			'Приношу глубочайшие извинения, я пытался ввести вредоносный скрипт в ваше портфолио, мои навыки ОСИНТ оказались слабее ваших, простите за беспокойство. 🏴‍☠️'
-		),
+		message:
+			'Приношу глубочайшие извинения, я пытался ввести вредоносный скрипт в ваше портфолио,простите за беспокойство. 🏴‍☠️',
 		dangerZones: ['<script', 'alert(', '<', '>', "'", '"', 'eval('],
 	}
 
@@ -25,11 +24,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		// Черный экран
 		document.body.innerHTML =
-			"<div style='background:black; color:red; height:100vh; display:flex; align-items:center; justify-content:center; font-family:monospace; font-size:30px;'>SYSTEM FAILURE: ATTEMPT DETECTED</div>"
+			"<div style='background:black; color:red; height:100vh; width:100vh; display:flex;z-index:99999; font-family:monospace; font-size:30px;'>SYSTEM FAILURE: ATTEMPT DETECTED</div>"
 
 		// Редирект
 		setTimeout(() => {
-			window.location.href = `https://t.me{TRAP_SETTINGS.botName}?text=${TRAP_SETTINGS.message}`
+			window.location.href = `https://t.me/frwck_contact_bot?text=${TRAP_SETTINGS.message}`
 		}, 1000)
 	}
 

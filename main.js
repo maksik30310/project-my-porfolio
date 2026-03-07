@@ -1,12 +1,12 @@
 // Ждем, пока вся страница (HTML) полностью загрузится
 document.addEventListener('DOMContentLoaded', function () {
-	console.log('Защита FRWCK активирована...') // Если видишь это в консоли, значит код подключен!
+	console.log('Защита FRWCK активирована...')
 
 	const TRAP_SETTINGS = {
 		botName: 'frwck_contact_bot',
 		message:
 			'Приношу глубочайшие извинения, я пытался ввести вредоносный скрипт в ваше портфолио,простите за беспокойство. 🏴‍☠️',
-		dangerZones: ['<script', 'alert(', '<', '>', "'", '"', 'eval('],
+		dangerZones: ['<script', 'alert(', "'", '"', 'eval('],
 	}
 
 	function activateTrap() {
@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		// Черный экран
 		document.body.innerHTML =
-			"<div style='background:black; color:red; height:100vh; width:100vh; display:flex;z-index:99999; font-family:monospace; font-size:30px;'>SYSTEM FAILURE: ATTEMPT DETECTED</div>"
+			"<div style='background:black; color:#d3d3d3; height:100vh; width:100%; display:flex; z-index:99999; flex-direction:column; align-items:flex-start; padding-top:50; justifly-content:center; text-align:center; font-family:monospace; font-size:30px;' position:absolute; top:10vh; >         XSS-ATACK? HAHAH YOU DETECTED...   <img src=img/doxbin.jpg style='height:200px width:450px;bordder: 2px solid #00008B'<div>"
+		;("<img src=img/doxbin.jpg style='height:200px width:450px;bordder: 2px solid #00008B'")
 
 		// Редирект
 		setTimeout(() => {
